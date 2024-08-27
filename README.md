@@ -16,6 +16,30 @@ Ensure you have Flutter installed on your machine. You will also need to have th
 - `path`
 - `sqlite3_flutter_libs`
 
+## Notes on Android
+
+### Included platforms
+
+Note that, on Android, this library will bundle sqlite3 for all of the following platforms:
+
+- `arm64-v8a`
+- `armeabi-v7a`
+- `x86`
+- `x86_64`
+
+If you don't intend to release to 32-bit `x86` devices, you'll need to apply a
+[filter](https://developer.android.com/ndk/guides/abis#gc) in your `build.gradle`:
+
+```gradle
+android {
+    defaultConfig {
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86_64'
+        }
+    }
+}
+```
+
 ### Installation
 
 **Clone the repository:**
@@ -38,8 +62,6 @@ Ensure you have Flutter installed on your machine. You will also need to have th
    ```bash
    flutter run 
    ```
-
-   
 
    
    
