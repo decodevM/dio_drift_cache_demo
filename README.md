@@ -11,9 +11,10 @@ Ensure you have Flutter installed on your machine. You will also need to have th
 - `dio`
 - `dio_cache_interceptor`
 - `pretty_dio_logger`
-- `drift`
-- `drift_flutter`
+- `dio_cache_interceptor_db_store`
 - `path_provider`
+- `path`
+- `sqlite3_flutter_libs`
 
 ### Installation
 
@@ -22,14 +23,17 @@ Ensure you have Flutter installed on your machine. You will also need to have th
    ```bash
    git clone https://github.com/your-repo/flutter-dio-cache-demo.git
    ```
+**Navigate to the project directory:**
 
    ```bash
    cd flutter-dio-cache-demo
    ```
+**Get dependencies:**
 
    ```bash
    flutter pub get
    ```
+**Run the project:**
 
    ```bash
    flutter run 
