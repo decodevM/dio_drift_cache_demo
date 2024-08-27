@@ -21,7 +21,7 @@ Ensure you have Flutter installed on your machine. You will also need to have th
 **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-repo/flutter-dio-cache-demo.git
+   git clone https://github.com/decodevM/dio_drift_cache_demo.git
    ```
 **Navigate to the project directory:**
 
